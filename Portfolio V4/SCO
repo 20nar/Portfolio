@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zonar Caldera</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/zonarlogo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResonspive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="container-fluid padding">
+<div class="row padding">
+    <div class="col-md-4">
+    <div class="card">
+    <img class="card-img-top" src="img/team7.png">
+        <div class="card-body">
+        <h4 class="card-title">Stategy and Concept</h4>
+            <p class="card-text">Developing a consistent and distinctive brand strategy and visual identiy.Brand a band.</p>
+            <a href="personalprojects.html" class="btn btn-outline-secondary"> See project</a>
+        </div>
+    </div>
+    </div>     
+    <div class="col-md-4">
+    <div class="card">
+    <img class="card-img-top" src="img/team6.png">
+        <div class="card-body">
+        <h4 class="card-title">User experience User Centered Design</h4>
+            <p class="card-text"> User centered design means that you focus on the wishes, needs and characteristics of clients. </p>
+            <a href="#" class="btn btn-outline-secondary"> See project</a>
+        </div>
+    </div>
+    </div>  
+    <div class="col-md-4">
+    <div class="card">
+    <img class="card-img-top" src="img/team5.png">
+        <div class="card-body">
+        <h4 class="card-title">Development</h4>
+            <p class="card-text">Developing media products by programming and integrating proofs of concepts based on requirements.</p>
+            <a href="poc.html" class="btn btn-outline-secondary"> See projects</a>
+        </div>
+    </div>
+    </div>  
+</div>
+            </div>
+    <div class="container-fluid padding">
+<div class="row text-center padding">
+<div class="col-12">
+    <h2>Connect</h2>
+    </div> 
+    <div class="col-12 social padding">
+        <a href="http://www.facebook.com/zonar.caldera"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.instagram.com/20nar"><i class="fab fa-instagram"></i></a>
+        <a href="http://www.youtube.com/user/20nar"><i class="fab fa-youtube"></i></a>
+    </div>
+    </div>           
+            </div>
+<footer> 
+    <div class="container-fluid padding">
+        <div class="row text-center">
+        <div class="col-sm-12">
+            <img src="img/zonarlogo1.png">
+            <hr class="light">
+            <p> +31 644660884</p>
+            <p> zonar_94@hotmail.com</p>
+            
+            <p> Tilburg, Netherlands </p>
+        </div>
+        </div>
+        </div>
+    </footer>
+            </body>
+
+</html>
