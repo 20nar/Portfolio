@@ -1,6 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <body>
-<script></script>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Moving an Object</title>
+</head>
+<body>
+    <script>
+        var canvas = document.createElement("canvas");
+        b = canvas.getContext("2d");
+
+        canvas.width = 1200;
+        canvas.height = 500;
+
+        document.body.appendChild(canvas);
+
+        b.fillStyle = "black";
+        b.fillRect(0, 0, canvas.width, canvas.height);
+
+        var posX = 300;
+        posY = 300;
+        dx = 0;
+        dy = 0;
+
+        setInterval(function () {
+           
+            posX += dx;
+            posY += dy;
+
+            if (posX > 1200) {
+                dx = 0;
+                posX = 1200;
+            }
+
+            if (posX < 0) {
+                dx = 0;
+                posX = 0;
+            }
+
+            if (posY > 500) {
+                dy = 0;
+                posY = 500;
+            }
+
+            if (posY < 0) {
+                dy = 0;
+                posY = 0;
+            }
+
+        b.fillStyle = "red";
+        b.fillRect(posX, posY, 30, 30);
+        }, 20)
+
+        window.addEventListener("keydown", press001, true);
+        function press001(event) {
+            switch (event.keyCode) {
+                case 37:
+                    dx = -1;
+                    dy = 0;
+                    break;
+
+                case 38:
+                    dx = 0;
+                    dy = -1;
+                    break;
+
+                case 39:
+                    dx = 1;
+                    dy = 0;
+                    break;
+
+                case 40:
+                    dx = 0;
+                    dy = 1;
+                    break;
+
+                case 32:
+                    dx = 0;
+                    dy = 0;
+                    break;
+            }
+        }
+    </script>
+    <p>Press the arrow keys to move the cube</p>
 </body>
 </html>

@@ -1,14 +1,13 @@
-var content = document.getElementById("content");
-var button = document.getElementById("show-more");
-
-button.onclick = function(){
+$(document).ready(function(){    
+    //scrolldown
+    var controller = new ScrollMagic.Controller();
     
-    if(content.className == "open"){
-        //shrink the box
-        content.className = "";
-    } else {
-        //expand the box
-        content.className ="open";
-    }
-}
-
+    //build a scene
+    
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '#project01'
+        
+    })
+    .setClassToggle('#project01', 'fade-in') // add class to project01
+    .addTo(controller);
+});

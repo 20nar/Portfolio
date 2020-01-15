@@ -7,22 +7,23 @@ body {
     width: 100%;
     font-family: 'Alata', sans-serif;
     color: #2D3319;
-    background-color: #93B7BE;
+    background-color: #ECFFF8;
     font-size: 0.8em;
     
 }
 
 .navbar {
     padding: .8rem;
-    color: ;
+    color: blue;
 }
 
 .navbar-nav li {
-    padding-right: 30px;
+    padding-right: 3px;
 }
 
 .nav-link {
     font-size: 1.1em !important !;
+
 }
 
 .carousel{
@@ -66,7 +67,7 @@ body {
 }
 
 .social a {
-    font-size: 4.5em;
+    font-size: 2.5em;
     padding: 3rem;
 }
 
@@ -119,7 +120,7 @@ body {
 
 footer {
     position: center;
-    background-color: #554348;
+    background-color: #343A40;
 
     color: #d5d5d5;
     padding-top: 2rem;
@@ -131,7 +132,7 @@ hr {
     color: black;
     border-width: 5px;
     opacity: 0%;
-        padding-top: 20px;
+        padding-top: 200px;
     
 }
 
@@ -234,16 +235,19 @@ figure {
 }
 body .carousel-indicators li{
   background-color: yellow;
+    padding-right: 20px;
 }
 body .carousel-control-prev-icon,
 body .carousel-control-next-icon{
-  background-color: transparent;
-}
-body .no-padding{
-  padding-left: 0;
-  padding-right: 0;
+  background-color: black;
+    padding-left: 
 }
 
+}
+p1{
+    color:Black;
+    text-decoration: underline;
+}
     
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
@@ -272,11 +276,34 @@ $white: #fff;
   max-width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
+
+    
 }
-h4{
-    padding-top: 180px;
-    padding-bottom: 20px;
-    font-size: 4em;
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 60vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+      
+
+    
+}
+col-lg-4{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+
+.col-lg-4.fade-in{
+    opacity: 1;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
 }
 .button {
   flex: 1 1 auto;
@@ -441,3 +468,22 @@ max-height: 270px;
     margin: 20px auto;
     cursor: pointer; 
 } 
+h5{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+h4{
+    padding-top: 0px;
+    text-align: center;
+}
+h6{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+h7{
+    font-size: 23px;
+    color: darkred;
+}
