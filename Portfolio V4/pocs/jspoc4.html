@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html Lang="en"> 
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fortune Teller</title> 
+</head>
+<body> 
+<h1> Fortune Teller</h1>
+<p> Think of a yes or no question. And then click "Tell Fortune" to get the answer</p>
+    
+    <button onclick="tell_fortune()" >Tell Fortune</button>
+    <p>
+    Answer: <span id="answer"></span>
+    </p>
+    
+    <script>
+              var tell_fortune = function(){
+                  
+                  var random_number = Math.random();
+                   
+                  random_number = Math.round(random_number);
+                  console.log(random_number);
+                  var answer = '';
+                  
+                  if(random_number > '.5'){
+                      
+                      answer = 'YES!';
+                    
+                  }
+                  else{
+                      answer = 'NO!';
+                  }
+                  document.getElementById('answer').innerHTML = answer ;
+              }
+    
+    </script>
+</body>
+</html>
